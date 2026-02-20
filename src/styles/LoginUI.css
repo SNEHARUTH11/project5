@@ -9,12 +9,12 @@
 }
 
 .login-card {
-  background: white;
+  background: black;
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   width: 100%;
-  max-width: 400px;
+  max-width: 406px;
   animation: slideIn 0.5s ease-out;
 }
 
@@ -29,13 +29,7 @@
   }
 }
 
-.login-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  text-align: center;
-  color: #333;
-}
+
 
 .login-subtitle {
   font-size: 14px;
