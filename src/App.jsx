@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LoginUI from "./components/LoginUI";
 import TiptapEditor from "./components/TiptapEditor";
-import "./App.css";
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
