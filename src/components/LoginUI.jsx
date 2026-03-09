@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
 function LoginUI() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -7,6 +8,7 @@ function LoginUI() {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -15,6 +17,7 @@ function LoginUI() {
   const handleGoogleLogin = () => {
     window.location.href = "http://localhost:5000/auth/google";
   };
+  navigate("/editor");
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
